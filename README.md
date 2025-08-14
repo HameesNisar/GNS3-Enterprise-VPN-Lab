@@ -41,7 +41,7 @@ The IP addressing for this project utilizes distinct `/24` private networks for 
 ---
 ## ⚙️ Device Configurations
 
-Below are the final, working configurations for the key network devices in this project.
+Below are the final, working configurations for the key network devices in this project, organized in a logical flow.
 
 <details>
 <summary><strong>Click to view EdgeRouter-HQ Configuration</strong></summary>
@@ -49,19 +49,7 @@ Below are the final, working configurations for the key network devices in this 
 ```cisco
 hostname EdgeRouter-HQ
 !
-crypto isakmp policy 10
- encr aes
- authentication pre-share
- hash sha
-!
-crypto isakmp key CiscoVPN address 20.0.0.2
-!
-crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
-!
-crypto map VPN-MAP 10 ipsec-isakmp
- set peer 20.0.0.2
- set transform-set VPN-SET
- match address 110
+! Interface Configuration
 !
 interface Tunnel0
  description VPN Tunnel to Branch Office
@@ -96,9 +84,14 @@ interface FastEthernet1/0
  crypto map VPN-MAP
  duplex full
 !
-ip nat inside source list 101 interface FastEthernet1/0 overload
+! Routing Configuration
+!
 ip route 0.0.0.0 0.0.0.0 10.0.0.2
 ip route 192.168.20.0 255.255.255.0 172.16.1.2
+!
+! NAT and ACL Configuration
+!
+ip nat inside source list 101 interface FastEthernet1/0 overload
 !
 access-list 101 deny   ip 192.168.10.0 0.0.0.255 192.168.20.0 0.0.0.255
 access-list 101 deny   ip 192.168.11.0 0.0.0.255 192.168.20.0 0.0.0.255
@@ -109,10 +102,24 @@ access-list 101 permit ip 192.168.12.0 0.0.0.255 any
 !
 access-list 110 permit gre host 10.0.0.1 host 20.0.0.2
 !
-</details>
+! VPN Configuration
+!
+crypto isakmp policy 10
+ encr aes
+ authentication pre-share
+ hash sha
+!
+crypto isakmp key CiscoVPN address 20.0.0.2
+!
+crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+!
+crypto map VPN-MAP 10 ipsec-isakmp
+ set peer 20.0.0.2
+ set transform-set VPN-SET
+ match address 110
+!
 
-<details>
-<summary><strong>Click to view Core-Switch Configuration</strong></summary>
+</details> <details> <summary><strong>Click to view Core-Switch Configuration</strong></summary>
 
 hostname Core-Switch
 !
@@ -141,11 +148,8 @@ interface FastEthernet1/15
  description Link to EdgeRouter
  switchport mode trunk
 !
-</details>
 
-<details>
-<summary><strong>Click to view ISP_Router Configuration</strong></summary>
-
+</details> <details> <summary><strong>Click to view ISP_Router Configuration</strong></summary>
 hostname ISP_Router
 !
 interface FastEthernet0/0
@@ -158,26 +162,12 @@ interface FastEthernet1/0
  ip address 20.0.0.1 255.255.255.252
  no shutdown
 !
-</details>
 
-<details>
-<summary><strong>Click to view EdgeRouter-Branch Configuration</strong></summary>
+</details> <details> <summary><strong>Click to view EdgeRouter-Branch Configuration</strong></summary>
 
 hostname EdgeRouter-Branch
 !
-crypto isakmp policy 10
- encr aes
- authentication pre-share
- hash sha
-!
-crypto isakmp key CiscoVPN address 10.0.0.1
-!
-crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
-!
-crypto map VPN-MAP 10 ipsec-isakmp
- set peer 10.0.0.1
- set transform-set VPN-SET
- match address 110
+! Interface Configuration
 !
 interface Tunnel0
  description VPN Tunnel to Head Office
@@ -196,13 +186,55 @@ interface FastEthernet1/0
  crypto map VPN-MAP
  no shutdown
 !
+! Routing Configuration
+!
 ip route 0.0.0.0 0.0.0.0 20.0.0.1
 ip route 192.168.10.0 255.255.255.0 172.16.1.1
 ip route 192.168.11.0 255.255.255.0 172.16.1.1
 ip route 192.168.12.0 255.255.255.0 172.16.1.1
 !
+! ACL Configuration
+!
 access-list 110 permit gre host 20.0.0.2 host 10.0.0.1
 !
-</details>
+! VPN Configuration
+!
+crypto isakmp policy 10
+ encr aes
+ authentication pre-share
+ hash sha
+!
+crypto isakmp key CiscoVPN address 10.0.0.1
+!
+crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+!
+crypto map VPN-MAP 10 ipsec-isakmp
+ set peer 10.0.0.1
+ set transform-set VPN-SET
+ match address 110
+!
+</details> ```
+
+## 🔧 Lab Setup & Requirements
+
+**Software:**  
+- GNS3 version 2.2 or later.
+
+**IOS Images:**  
+The following Cisco IOS images were used in this build. Users must source these images legally:  
+- **Edge/ISP Routers:** `c7200-adventerprisek9-mz.152-4.M7.bin` (or similar C7200 image)  
+- **Core-Switch:** `c3745-advipservicesk9-mz.124-25d.bin` (configured with an `NM-16ESW` module)  
+
+---
+
+## ✅ Verification
+
+- End-to-end connectivity is verified by a **successful ping** from a host in any Head Office VLAN  
+  (e.g., `192.168.10.10`) to a host in the Branch Office LAN (e.g., `192.168.20.10`).  
+- The `show crypto ipsec sa` command on the edge routers will show **active packet encryption and decryption counters**, confirming:  
+  - The VPN tunnel is operational.  
+  - Traffic is being securely encrypted and decrypted.
+
+
 
 
