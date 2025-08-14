@@ -47,7 +47,7 @@ Below are the final, working configurations for the key network devices in this 
 ---
 
 ### 🖥 EdgeRouter-HQ Configuration
-
+```
 hostname EdgeRouter-HQ
 !
 ! Interface Configuration
@@ -119,7 +119,7 @@ crypto map VPN-MAP 10 ipsec-isakmp
  set transform-set VPN-SET
  match address 110
 !
-
+```
 ---
 
 ### 🖥 EtherSwitch-Router Configuration
@@ -152,8 +152,9 @@ interface FastEthernet1/15
 !
 
 ---
-### 🖥 ISP_Router Configuration
 
+### 🖥 ISP_Router Configuration
+```
 hostname ISP_Router
 !
 interface FastEthernet0/0
