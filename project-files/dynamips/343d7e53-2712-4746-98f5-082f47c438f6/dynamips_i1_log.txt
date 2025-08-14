@@ -1,0 +1,192 @@
+Aug 13 14:35:23.388 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 13 14:35:23.403 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57291.
+Aug 13 14:35:23.630 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 13 14:35:23.630 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\freet\Desktop\poftfolio\project-files\dynamips 
+Aug 13 14:35:23.637 GENERAL: working_dir=C:\Users\freet\Desktop\poftfolio\project-files\dynamips
+Aug 13 14:35:23.637 HYPERVISOR: exec_cmd: ethsw create Switch2 
+Aug 13 14:35:26.566 HYPERVISOR: exec_cmd: nio create_udp udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 20008 127.0.0.1 20009 
+Aug 13 14:35:26.566 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 
+Aug 13 14:35:26.582 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:35:26.625 HYPERVISOR: exec_cmd: nio create_udp udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 20010 127.0.0.1 20011 
+Aug 13 14:35:26.625 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 
+Aug 13 14:35:26.645 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:35:26.677 HYPERVISOR: exec_cmd: nio create_udp udp-30e52f03-a983-4c07-a0be-c70d97948a8a 20012 127.0.0.1 20013 
+Aug 13 14:35:26.677 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 
+Aug 13 14:35:26.709 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:35:26.756 HYPERVISOR: exec_cmd: nio create_udp udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 20014 127.0.0.1 20015 
+Aug 13 14:35:26.756 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 
+Aug 13 14:35:26.772 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:35:26.825 HYPERVISOR: exec_cmd: nio create_udp udp-0f21b298-a48f-457a-a1aa-e47a450465f7 20016 127.0.0.1 20017 
+Aug 13 14:35:26.825 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 
+Aug 13 14:35:26.837 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:35:26.885 HYPERVISOR: exec_cmd: nio create_udp udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 20018 127.0.0.1 20019 
+Aug 13 14:35:26.901 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 
+Aug 13 14:35:26.933 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:35:27.442 HYPERVISOR: exec_cmd: nio create_udp udp-d8e72132-77fa-4e17-a197-db33c644aa43 20034 127.0.0.1 20035 
+Aug 13 14:35:27.442 HYPERVISOR: exec_cmd: ethsw add_nio Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 
+Aug 13 14:35:27.474 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:35:37.542 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:35:37.542 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:35:37.569 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:35:37.600 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:35:37.600 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:35:37.632 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:35:37.664 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:35:38.264 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:35:38.264 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:35:38.296 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:35:38.328 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:35:38.328 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:35:38.359 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:35:38.359 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:35:38.557 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:35:38.557 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:35:38.584 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:35:38.645 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:35:38.663 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:35:38.729 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:35:38.759 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:35:57.222 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:35:57.222 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:35:57.222 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:35:57.222 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:35:57.222 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:35:57.255 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:35:57.286 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:35:58.034 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:35:58.034 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:35:58.034 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:35:58.034 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:35:58.065 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:35:58.065 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:35:58.097 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:36:02.314 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:36:02.327 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:36:02.327 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:36:02.330 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:36:02.331 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:36:02.362 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:36:02.378 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:36:25.933 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:36:25.933 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:36:25.933 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:36:25.933 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:36:25.933 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:36:25.972 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:36:25.996 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:36:34.175 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:36:34.206 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:36:34.206 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:36:34.238 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:36:34.272 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:36:34.272 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:36:34.307 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:37:22.329 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:37:22.331 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:37:22.333 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:37:22.335 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:37:22.337 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:37:22.395 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:37:22.415 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:37:23.073 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:37:23.099 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:37:23.126 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:37:23.153 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:37:23.182 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:37:23.206 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:37:23.237 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:37:23.427 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:37:23.480 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:37:23.538 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:37:23.571 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:37:23.655 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:37:23.682 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:37:23.713 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:50:36.693 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:50:36.712 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:50:36.734 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:50:36.765 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:50:36.813 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:50:36.817 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:50:36.853 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:50:37.429 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:50:37.445 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:50:37.459 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:50:37.476 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:50:37.507 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:50:37.507 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:50:37.548 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:50:37.713 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:50:37.745 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:50:37.777 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:50:37.829 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:50:37.866 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:50:37.888 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:50:37.957 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:51:02.479 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:51:02.479 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:51:02.479 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:51:02.488 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:51:02.488 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:51:02.488 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:51:02.488 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 14:58:29.544 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 14:58:29.575 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 14:58:29.607 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 14:58:29.618 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 14:58:29.645 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 14:58:29.676 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 14:58:29.701 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 15:09:49.138 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 15:09:49.138 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 15:09:49.138 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 15:09:49.169 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 15:09:49.206 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 15:09:49.206 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 15:09:49.267 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 15:09:51.278 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 15:09:51.278 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 15:09:51.322 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 15:09:51.353 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 15:09:51.357 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 15:09:51.388 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 15:09:51.451 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 15:09:52.008 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 15:09:52.008 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 15:09:52.044 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 15:09:52.072 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 15:09:52.072 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 15:09:52.100 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 15:09:52.120 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 15:09:52.405 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 15:09:52.445 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 15:09:52.500 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 15:09:52.529 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 15:09:52.590 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 15:09:52.619 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 15:09:52.647 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 1 
+Aug 13 15:30:02.932 HYPERVISOR: exec_cmd: ethsw set_access_port Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 1 
+Aug 13 15:30:04.666 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 
+Aug 13 15:30:04.682 HYPERVISOR: exec_cmd: nio delete udp-40a2c39d-784a-4d99-8d2e-49e51bd8dcd0 
+Aug 13 15:30:04.775 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 
+Aug 13 15:30:04.777 HYPERVISOR: exec_cmd: nio delete udp-f58fb996-ba56-48d4-8732-abf6dcf27da7 
+Aug 13 15:30:04.841 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-30e52f03-a983-4c07-a0be-c70d97948a8a 
+Aug 13 15:30:04.875 HYPERVISOR: exec_cmd: nio delete udp-30e52f03-a983-4c07-a0be-c70d97948a8a 
+Aug 13 15:30:04.921 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 
+Aug 13 15:30:04.938 HYPERVISOR: exec_cmd: nio delete udp-d3fabf06-9492-48ed-8b9a-08f48e2c7462 
+Aug 13 15:30:04.984 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-0f21b298-a48f-457a-a1aa-e47a450465f7 
+Aug 13 15:30:05.000 HYPERVISOR: exec_cmd: nio delete udp-0f21b298-a48f-457a-a1aa-e47a450465f7 
+Aug 13 15:30:05.080 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 
+Aug 13 15:30:05.096 HYPERVISOR: exec_cmd: nio delete udp-ba33e68b-efe2-4789-acf4-81fbe61f0742 
+Aug 13 15:30:05.152 HYPERVISOR: exec_cmd: ethsw remove_nio Switch2 udp-d8e72132-77fa-4e17-a197-db33c644aa43 
+Aug 13 15:30:05.160 HYPERVISOR: exec_cmd: nio delete udp-d8e72132-77fa-4e17-a197-db33c644aa43 
+Aug 13 15:30:05.224 HYPERVISOR: exec_cmd: ethsw delete Switch2 
+Aug 13 15:30:05.240 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 13 15:30:05.629 HYPERVISOR: Stopped.
+Aug 13 15:30:05.629 GENERAL: reset done.
