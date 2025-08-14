@@ -43,7 +43,7 @@ The IP addressing for this project utilizes distinct `/24` private networks for 
 
 Below are the final, working configurations for the key network devices in this project, organized in a logical flow.
 
-<details>
+
 <summary><strong>Click to view EdgeRouter-HQ Configuration</strong></summary>
 
 ```cisco
@@ -213,7 +213,7 @@ crypto map VPN-MAP 10 ipsec-isakmp
  set transform-set VPN-SET
  match address 110
 !
-</details> ```
+ ```
 
 ## 🔧 Lab Setup & Requirements
 
