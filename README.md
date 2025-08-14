@@ -119,7 +119,7 @@ crypto map VPN-MAP 10 ipsec-isakmp
  set transform-set VPN-SET
  match address 110
 !
-
+```
 ---
 
 ### 🖥 EtherSwitch-Router Configuration
@@ -151,7 +151,7 @@ interface FastEthernet1/15
  description Link to EdgeRouter
  switchport mode trunk
 !
-
+```
 ---
 
 ### 🖥 ISP_Router Configuration
@@ -168,7 +168,7 @@ interface FastEthernet1/0
  ip address 20.0.0.1 255.255.255.252
  no shutdown
 !
-
+```
 ---
 
 ### 🖥 EdgeRouter-Branch Configuration
@@ -221,7 +221,7 @@ crypto map VPN-MAP 10 ipsec-isakmp
  set transform-set VPN-SET
  match address 110
 !
-
+```
 ---
 
 ## 🔧 Lab Setup & Requirements
@@ -243,7 +243,3 @@ The following Cisco IOS images were used in this build. Users must source these 
 - The `show crypto ipsec sa` command on the edge routers will show **active packet encryption and decryption counters**, confirming:  
   - The VPN tunnel is operational.  
   - Traffic is being securely encrypted and decrypted.
-
-
-
-
