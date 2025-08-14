@@ -119,10 +119,11 @@ crypto map VPN-MAP 10 ipsec-isakmp
  set transform-set VPN-SET
  match address 110
 !
-```
+
 ---
 
 ### 🖥 EtherSwitch-Router Configuration
+```
 hostname EtherSwitch-Router
 !
 vlan database
@@ -169,7 +170,9 @@ interface FastEthernet1/0
 !
 
 ---
+
 ### 🖥 EdgeRouter-Branch Configuration
+```
 hostname EdgeRouter-Branch
 !
 ! Interface Configuration
