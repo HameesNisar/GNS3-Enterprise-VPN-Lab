@@ -227,7 +227,7 @@ crypto map VPN-MAP 10 ipsec-isakmp
 ## 🔧 Lab Setup & Requirements
 
 **Software:**  
-- GNS3 version 2.2 or later.
+- GNS3 version 2.2.56 or later.
 
 **IOS Images:**  
 The following Cisco IOS images were used in this build. Users must source these images legally:  
