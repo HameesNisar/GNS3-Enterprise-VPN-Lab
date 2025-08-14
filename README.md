@@ -8,7 +8,8 @@ The primary objective is to demonstrate a comprehensive range of fundamental and
 
 ## 🗺️ Network Topology
 
-<img width="2845" height="1561" alt="github" src="https://github.com/user-attachments/assets/c8502417-1461-408f-8d17-859bafdc2eaa" />
+<img width="2845" height="1561" alt="final" src="https://github.com/user-attachments/assets/c2cd0269-c390-4b28-8afd-b00ee3ad381d" />
+
 
 ## ✨ Key Skills Demonstrated
 
