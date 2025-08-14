@@ -39,14 +39,15 @@ The IP addressing for this project utilizes distinct `/24` private networks for 
 | **VPN Tunnel**    | Tunnel Link         | `172.16.1.0/30`     | N/A     |
 
 ---
+
 ## ⚙️ Device Configurations
 
 Below are the final, working configurations for the key network devices in this project, organized in a logical flow.
 
+---
 
-<summary><strong>Click to view EdgeRouter-HQ Configuration</strong></summary>
+### 🖥 EdgeRouter-HQ Configuration
 
-```cisco
 hostname EdgeRouter-HQ
 !
 ! Interface Configuration
@@ -119,9 +120,10 @@ crypto map VPN-MAP 10 ipsec-isakmp
  match address 110
 !
 
-</details> <details> <summary><strong>Click to view Core-Switch Configuration</strong></summary>
+---
 
-hostname Core-Switch
+### 🖥 EtherSwitch-Router Configuration
+hostname EtherSwitch-Router
 !
 vlan database
  vlan 10 name HR
@@ -149,7 +151,9 @@ interface FastEthernet1/15
  switchport mode trunk
 !
 
-</details> <details> <summary><strong>Click to view ISP_Router Configuration</strong></summary>
+---
+### 🖥 ISP_Router Configuration
+
 hostname ISP_Router
 !
 interface FastEthernet0/0
@@ -163,8 +167,8 @@ interface FastEthernet1/0
  no shutdown
 !
 
-</details> <details> <summary><strong>Click to view EdgeRouter-Branch Configuration</strong></summary>
-
+---
+### 🖥 EdgeRouter-Branch Configuration
 hostname EdgeRouter-Branch
 !
 ! Interface Configuration
@@ -213,7 +217,8 @@ crypto map VPN-MAP 10 ipsec-isakmp
  set transform-set VPN-SET
  match address 110
 !
- ```
+
+---
 
 ## 🔧 Lab Setup & Requirements
 
